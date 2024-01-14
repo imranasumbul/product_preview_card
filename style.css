@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+}
+body > .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body > .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (width <= 450px) and (width >= 310px) {
+  main {
+    width: 94%;
+  }
+  main > .attribution {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  main > .content-box {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  main > .content-box > .image {
+    width: 100%;
+  }
+  main > .content-box > .image > .mobile-img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main > .content-box > .image > .desktop-img {
+    display: none;
+  }
+  main > .content-box > .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main > .content-box > .content :nth-child(n) {
+    width: 90%;
+  }
+  main > .content-box > .content > .text > .block-text {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  main > .content-box > .content > .text > .bold-text {
+    margin-top: 5px;
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 29px;
+    color: hsl(212, 21%, 14%);
+  }
+  main > .content-box > .content > .text > p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+  }
+  main > .content-box > .content > .text > .paragraph-text {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  main > .content-box > .content > .pricing {
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: hsl(228, 12%, 48%);
+  }
+  main > .content-box > .content > .pricing .current-price {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    margin-right: 5px;
+  }
+  main > .content-box > .content > .pricing > .actual-price {
+    text-decoration: line-through;
+  }
+  main > .content-box > .content > button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    line-height: 1.3;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+  }
+  main > .content-box > .content > button .cart-svg {
+    width: 15px;
+    height: 16px;
+  }
+  main > .content-box > .content > button:hover {
+    background-color: hsl(212, 21%, 14%);
+  }
+}
+@media (width > 450px) and (width < 520px) {
+  main {
+    width: 80%;
+  }
+  main > .attribution {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  main > .content-box {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  main > .content-box > .image {
+    width: 100%;
+  }
+  main > .content-box > .image > .mobile-img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main > .content-box > .image > .desktop-img {
+    display: none;
+  }
+  main > .content-box > .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main > .content-box > .content :nth-child(n) {
+    width: 90%;
+  }
+  main > .content-box > .content > .text > .block-text {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  main > .content-box > .content > .text > .bold-text {
+    margin-top: 5px;
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 29px;
+    color: hsl(212, 21%, 14%);
+  }
+  main > .content-box > .content > .text > p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+  }
+  main > .content-box > .content > .text > .paragraph-text {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  main > .content-box > .content > .pricing {
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: hsl(228, 12%, 48%);
+  }
+  main > .content-box > .content > .pricing .current-price {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    margin-right: 5px;
+  }
+  main > .content-box > .content > .pricing > .actual-price {
+    text-decoration: line-through;
+  }
+  main > .content-box > .content > button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    line-height: 1.3;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+  }
+  main > .content-box > .content > button .cart-svg {
+    width: 15px;
+    height: 16px;
+  }
+  main > .content-box > .content > button:hover {
+    background-color: hsl(212, 21%, 14%);
+  }
+}
+@media (width < 650px) and (width >= 520px) {
+  main {
+    width: 70%;
+  }
+  main > .attribution {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  main > .content-box {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  main > .content-box > .image {
+    width: 100%;
+  }
+  main > .content-box > .image > .mobile-img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main > .content-box > .image > .desktop-img {
+    display: none;
+  }
+  main > .content-box > .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main > .content-box > .content :nth-child(n) {
+    width: 90%;
+  }
+  main > .content-box > .content > .text > .block-text {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  main > .content-box > .content > .text > .bold-text {
+    margin-top: 5px;
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 29px;
+    color: hsl(212, 21%, 14%);
+  }
+  main > .content-box > .content > .text > p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+  }
+  main > .content-box > .content > .text > .paragraph-text {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  main > .content-box > .content > .pricing {
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: hsl(228, 12%, 48%);
+  }
+  main > .content-box > .content > .pricing .current-price {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    margin-right: 5px;
+  }
+  main > .content-box > .content > .pricing > .actual-price {
+    text-decoration: line-through;
+  }
+  main > .content-box > .content > button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    line-height: 1.3;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+  }
+  main > .content-box > .content > button .cart-svg {
+    width: 15px;
+    height: 16px;
+  }
+  main > .content-box > .content > button:hover {
+    background-color: hsl(212, 21%, 14%);
+  }
+}
+@media (width >= 650px) {
+  main {
+    width: auto;
+  }
+  main > .content-box {
+    width: 100%;
+    overflow: hidden;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  main > .content-box > .image {
+    width: 300px;
+    height: 450px;
+  }
+  main > .content-box > .image > .desktop-img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main > .content-box > .image > .mobile-img {
+    display: none;
+  }
+  main > .content-box > .content {
+    width: 300px;
+    min-height: 300px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main > .content-box > .content :nth-child(n) {
+    width: 85%;
+  }
+  main > .content-box > .content > .text > .block-text {
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  main > .content-box > .content > .text > .bold-text {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 29px;
+    color: hsl(212, 21%, 14%);
+  }
+  main > .content-box > .content > .text > p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+  }
+  main > .content-box > .content > .text > .paragraph-text {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  main > .content-box > .content > .pricing {
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: hsl(228, 12%, 48%);
+  }
+  main > .content-box > .content > .pricing .current-price {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    margin-right: 5px;
+  }
+  main > .content-box > .content > .pricing > .actual-price {
+    text-decoration: line-through;
+  }
+  main > .content-box > .content > button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    line-height: 1.3;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+  }
+  main > .content-box > .content > button .cart-svg {
+    width: 15px;
+    height: 16px;
+  }
+  main > .content-box > .content > button:hover {
+    background-color: hsl(212, 21%, 14%);
+  }
+}/*# sourceMappingURL=style.css.map */
