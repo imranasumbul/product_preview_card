@@ -1,14 +1,14 @@
 @import 'variables';
 @import 'globals';
 
-@media (width <= 450px) and (width >= 310px){
+@media (width <= 400px) and (width >= 310px){
     main{
-        width: 94%;
+        width: 92%;
         >.attribution{
             font-size: 12px;
             position: absolute;
             bottom: 0;
-            left: 0;
+            width:100%
         }
         >.content-box{
             width: 100%;
@@ -122,14 +122,14 @@
     }
 }
 
-@media (width > 450px) and (width < 520px){
+@media (width > 400px) and (width < 520px){
     main{
         width: 80%;
         >.attribution{
             font-size: 12px;
             position: absolute;
             bottom: 0;
-            left: 0;
+            width:100%
         }
         >.content-box{
             width: 100%;
@@ -250,7 +250,7 @@
             font-size: 12px;
             position: absolute;
             bottom: 0;
-            left: 0;
+            width:100%
         }
         >.content-box{
             width: 100%;

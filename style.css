@@ -15,6 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   line-height: 1.2;
+  position: relative;
 }
 body > .attribution {
   font-size: 11px;
@@ -24,15 +25,15 @@ body > .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media (width <= 450px) and (width >= 310px) {
+@media (width <= 400px) and (width >= 310px) {
   main {
-    width: 94%;
+    width: 92%;
   }
   main > .attribution {
     font-size: 12px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    width: 100%;
   }
   main > .content-box {
     width: 100%;
@@ -131,7 +132,7 @@ body > .attribution a {
     background-color: hsl(212, 21%, 14%);
   }
 }
-@media (width > 450px) and (width < 520px) {
+@media (width > 400px) and (width < 520px) {
   main {
     width: 80%;
   }
@@ -139,7 +140,7 @@ body > .attribution a {
     font-size: 12px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    width: 100%;
   }
   main > .content-box {
     width: 100%;
@@ -246,7 +247,7 @@ body > .attribution a {
     font-size: 12px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    width: 100%;
   }
   main > .content-box {
     width: 100%;
@@ -447,4 +448,4 @@ body > .attribution a {
   main > .content-box > .content > button:hover {
     background-color: hsl(212, 21%, 14%);
   }
-}/*# sourceMappingURL=style.css.map */
+}
