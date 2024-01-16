@@ -9,7 +9,7 @@
 body {
   background-color: hsl(30, 38%, 92%);
   font-family: "Montserrat";
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
